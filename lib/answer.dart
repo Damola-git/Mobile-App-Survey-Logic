@@ -14,11 +14,14 @@ class Answer extends StatelessWidget {
   style: ElevatedButton.styleFrom(
     backgroundColor: Colors.blue,
     foregroundColor: Colors.white, 
-  ),
+  ), 
+  shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(12),
         child: Text(answerText),
         onPressed: selectHandler,
 
     ));
   }
 }
+
 
